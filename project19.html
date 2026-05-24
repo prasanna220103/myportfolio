@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Chat Application using WebSockets and Serverless | Prasanna Velan V</title>
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to Portfolio
+      </a>
+
+      <a href="index.html" class="nav-home">
+        Prasanna Velan V
+      </a>
+
+    </div>
+  </nav>
+
+  <section class="project-hero">
+
+    <div class="container">
+
+      <div class="project-number">
+        Project 19 · AWS Serverless WebSocket Architecture
+      </div>
+
+      <h1 class="project-title">
+        Real-Time Chat Application<br>
+        using WebSockets and Serverless
+      </h1>
+
+      <p class="project-subtitle">
+        A scalable real-time messaging application built using AWS serverless services and WebSocket APIs. The project enables authenticated users to exchange messages instantly through persistent WebSocket connections using API Gateway, AWS Lambda, DynamoDB, and Amazon Cognito.
+      </p>
+
+      <div class="project-tech-list">
+
+        <span class="tech-tag">API Gateway WebSocket API</span>
+        <span class="tech-tag">AWS Lambda</span>
+        <span class="tech-tag">Amazon DynamoDB</span>
+        <span class="tech-tag">Amazon Cognito</span>
+        <span class="tech-tag">Serverless Architecture</span>
+        <span class="tech-tag">WebSocket Communication</span>
+        <span class="tech-tag">Identity Federation</span>
+        <span class="tech-tag">Real-Time Messaging</span>
+
+      </div>
+
+      <div class="project-actions">
+
+        <a href="https://github.com/PrasannaVelanV/Real-Time-Chat-App-using-WebSockets-and-Serverless.git"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-primary">
+          GitHub Repository
+        </a>
+
+        <button class="btn btn-outline"
+          onclick="document.getElementById('pdfViewer').scrollIntoView({behavior:'smooth'})">
+          View Documentation
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="project-content">
+    <div class="container">
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Overview
+        </p>
+
+        <h2 class="content-title">
+          Project Overview
+        </h2>
+
+        <p class="content-text">
+          The Real-Time Chat Application using WebSockets and Serverless Architecture project was developed to demonstrate secure and scalable instant messaging capabilities using AWS managed services.
+        </p>
+
+        <p class="content-text">
+          The application uses Amazon API Gateway WebSocket APIs to establish persistent bidirectional communication between connected users and backend services. AWS Lambda functions process incoming connections, disconnections, and real-time chat messages.
+        </p>
+
+        <p class="content-text">
+          Amazon DynamoDB stores active WebSocket connection IDs and chat-related state information, while Amazon Cognito handles secure user signup, login, authentication, and identity federation for authorized platform access.
+        </p>
+
+        <p class="content-text">
+          The architecture is fully serverless and event-driven, enabling automatic scalability, low operational overhead, and efficient handling of multiple simultaneous user connections without server management.
+        </p>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Scope
+        </p>
+
+        <h2 class="content-title">
+          Project Scope
+        </h2>
+
+        <p class="content-text">
+          The scope of this project is to design and implement a scalable real-time messaging platform using AWS serverless services and WebSocket APIs for persistent communication between authenticated users.
+        </p>
+
+        <ul class="content-list">
+          <li>Enable bidirectional real-time communication using API Gateway WebSocket APIs</li>
+          <li>Implement secure user signup and login using Amazon Cognito</li>
+          <li>Store and manage active WebSocket connection IDs using DynamoDB</li>
+          <li>Broadcast real-time chat messages using AWS Lambda functions</li>
+          <li>Build a fully serverless architecture without server management</li>
+          <li>Handle scalable event-driven communication for multiple connected users</li>
+          <li>Manage user authentication and authorization securely</li>
+          <li>Provide scalable cloud-native messaging infrastructure</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Key Features
+        </p>
+
+        <h2 class="content-title">
+          What Was Implemented
+        </h2>
+
+        <ul class="content-list">
+          <li>Persistent WebSocket communication using API Gateway WebSocket APIs</li>
+          <li>AWS Lambda integration for message handling and backend processing</li>
+          <li>Amazon DynamoDB for connection management and chat state storage</li>
+          <li>Amazon Cognito authentication and identity federation integration</li>
+          <li>Serverless real-time message broadcasting architecture</li>
+          <li>Scalable event-driven cloud communication system</li>
+          <li>Secure authenticated access for connected users</li>
+          <li>Automatic scaling without infrastructure management</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Architecture
+        </p>
+
+        <h2 class="content-title">
+          Technical Architecture
+        </h2>
+
+        <div class="info-grid">
+
+          <div class="info-card">
+            <p class="info-card-label">Communication</p>
+            <p class="info-card-value">API Gateway WebSocket API</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Backend Processing</p>
+            <p class="info-card-value">AWS Lambda</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Database</p>
+            <p class="info-card-value">Amazon DynamoDB</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Authentication</p>
+            <p class="info-card-value">Amazon Cognito</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Architecture Type</p>
+            <p class="info-card-value">Serverless</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Communication Model</p>
+            <p class="info-card-value">Real-Time WebSocket</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Learnings
+        </p>
+
+        <h2 class="content-title">
+          Key Takeaways
+        </h2>
+
+        <ul class="content-list">
+          <li>Learned WebSocket-based real-time communication using AWS services</li>
+          <li>Gained practical experience with AWS Lambda event-driven architectures</li>
+          <li>Understood serverless application scalability and state management</li>
+          <li>Worked with Amazon Cognito for authentication and identity federation</li>
+          <li>Implemented connection tracking using Amazon DynamoDB</li>
+          <li>Explored scalable message broadcasting techniques in serverless systems</li>
+          <li>Learned secure authentication and authorization practices for cloud applications</li>
+          <li>Understood fully managed AWS serverless infrastructure deployment</li>
+        </ul>
+
+      </div>
+
+      <div class="pdf-section" id="pdfViewer">
+
+        <p class="content-label">
+          Documentation
+        </p>
+
+        <h2 class="content-title">
+          Project Documentation
+        </h2>
+
+        <div class="pdf-viewer-wrap">
+
+          <div class="pdf-viewer-header">
+
+            <span class="pdf-viewer-title">
+              Real-Time Chat Application using WebSockets and Serverless Documentation
+            </span>
+
+            <span style="font-size:0.8rem;color:#888;">
+              Preview Mode
+            </span>
+
+          </div>
+
+          <iframe
+            class="pdf-iframe"
+            src="project19.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            title="Real-Time Chat Application Documentation">
+          </iframe>
+
+          <div class="pdf-placeholder">
+
+            <div class="pdf-placeholder-icon">
+              📄
+            </div>
+
+            <p class="pdf-placeholder-title">
+              PDF Viewer
+            </p>
+
+            <p class="pdf-placeholder-desc">
+              Documentation preview only. Download and external access are restricted.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <div class="container">
+      <p>
+        &copy; 2026
+        <a href="index.html">Prasanna Velan V</a>
+        · Cloud &amp; DevOps Enthusiast
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

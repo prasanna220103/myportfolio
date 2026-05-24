@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automated Backup and Recovery System | Prasanna Velan V</title>
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to Portfolio
+      </a>
+      <a href="index.html" class="nav-home">Prasanna Velan V</a>
+    </div>
+  </nav>
+
+  <section class="project-hero">
+    <div class="container">
+      <div class="project-number">Project 07 · AWS Automation</div>
+
+      <h1 class="project-title">
+        Automated Backup and Recovery System<br>
+        using AWS Lambda
+      </h1>
+
+      <p class="project-subtitle">
+        A fully automated AWS backup solution designed to create and manage Amazon EBS snapshots for EC2 instances using AWS Lambda and CloudWatch Events. The project implements automated snapshot retention policies to optimize storage cost, improve operational efficiency, and ensure reliable disaster recovery.
+      </p>
+
+      <div class="project-tech-list">
+        <span class="tech-tag">AWS Lambda</span>
+        <span class="tech-tag">Amazon EC2</span>
+        <span class="tech-tag">Amazon EBS</span>
+        <span class="tech-tag">CloudWatch Events</span>
+        <span class="tech-tag">IAM</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">EventBridge</span>
+        <span class="tech-tag">AWS Automation</span>
+      </div>
+
+      <div class="project-actions">
+        <a href="https://github.com/PrasannaVelanV/Automated-Backup-and-Recovery-System.git"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-primary">
+          GitHub Repository
+        </a>
+
+        <button class="btn btn-outline"
+          onclick="document.getElementById('pdfViewer').scrollIntoView({behavior:'smooth'})">
+          View Documentation
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-content">
+    <div class="container">
+
+      <div class="content-section">
+        <p class="content-label">Overview</p>
+
+        <h2 class="content-title">Project Overview</h2>
+
+        <p class="content-text">
+          The Automated Backup and Recovery System was developed to provide a reliable and fully automated backup mechanism for Amazon EC2 EBS volumes in AWS cloud environments.
+        </p>
+
+        <p class="content-text">
+          The solution uses AWS Lambda functions triggered by CloudWatch Events (EventBridge) to automatically create EBS snapshots at scheduled intervals. It also implements automated snapshot retention management by deleting outdated snapshots after a defined retention period, helping reduce unnecessary storage costs and maintaining backup efficiency.
+        </p>
+
+        <p class="content-text">
+          This project demonstrates the use of serverless automation, backup strategies, and IAM-based secure access management to improve operational reliability and disaster recovery readiness.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <p class="content-label">Scope</p>
+
+        <h2 class="content-title">Project Scope</h2>
+
+        <p class="content-text">
+          The scope of this project is to design and implement a serverless automated backup system for AWS EC2 EBS volumes. The system focuses on data protection, automation, cost optimization, and operational efficiency.
+        </p>
+
+        <ul class="content-list">
+          <li>Automated creation of EBS snapshots for selected EC2 volumes</li>
+          <li>Scheduled execution of backup operations using CloudWatch Events</li>
+          <li>Automatic deletion of snapshots older than the configured retention period</li>
+          <li>Implementation of secure IAM permissions for Lambda execution</li>
+          <li>Optimization of backup storage usage and operational management</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <p class="content-label">Key Features</p>
+
+        <h2 class="content-title">What Was Implemented</h2>
+
+        <ul class="content-list">
+          <li>Automated EBS snapshot creation using AWS Lambda functions</li>
+          <li>CloudWatch Events (EventBridge) scheduling for periodic backups</li>
+          <li>Snapshot retention policy to automatically remove old backups</li>
+          <li>IAM role configuration with secure least-privilege access</li>
+          <li>Python-based Lambda scripting for automation logic</li>
+          <li>Monitoring and logging through Amazon CloudWatch</li>
+          <li>Serverless backup workflow with minimal operational overhead</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <p class="content-label">Architecture</p>
+
+        <h2 class="content-title">Technical Architecture</h2>
+
+        <div class="info-grid">
+
+          <div class="info-card">
+            <p class="info-card-label">Trigger</p>
+            <p class="info-card-value">CloudWatch Events</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Compute</p>
+            <p class="info-card-value">AWS Lambda</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Storage</p>
+            <p class="info-card-value">Amazon EBS Snapshots</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Monitoring</p>
+            <p class="info-card-value">Amazon CloudWatch</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Security</p>
+            <p class="info-card-value">IAM Policies & Roles</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Automation</p>
+            <p class="info-card-value">Python Lambda Scripts</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content-section">
+        <p class="content-label">Learnings</p>
+
+        <h2 class="content-title">Key Takeaways</h2>
+
+        <ul class="content-list">
+          <li>Learned to automate AWS infrastructure operations using Lambda and EventBridge</li>
+          <li>Gained practical experience with Amazon EBS snapshot management</li>
+          <li>Understood backup retention strategies and storage optimization techniques</li>
+          <li>Improved IAM troubleshooting and permission management skills</li>
+          <li>Worked with serverless event-driven architectures in AWS</li>
+          <li>Learned CloudWatch logging and monitoring for operational visibility</li>
+        </ul>
+      </div>
+
+      <div class="pdf-section" id="pdfViewer">
+
+        <p class="content-label">Documentation</p>
+
+        <h2 class="content-title">Project Documentation</h2>
+
+        <div class="pdf-viewer-wrap">
+
+          <div class="pdf-viewer-header">
+            <span class="pdf-viewer-title">
+              Automated Backup and Recovery System Documentation
+            </span>
+
+            <span style="font-size:0.8rem;color:#888;">
+              Preview Mode
+            </span>
+          </div>
+
+          <iframe
+            class="pdf-iframe"
+            src="project7.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            title="Automated Backup and Recovery System Documentation">
+          </iframe>
+
+          <div class="pdf-placeholder">
+            <div class="pdf-placeholder-icon">📄</div>
+
+            <p class="pdf-placeholder-title">
+              PDF Viewer
+            </p>
+
+            <p class="pdf-placeholder-desc">
+              Documentation preview only. Download and external access are restricted.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <div class="container">
+      <p>
+        &copy; 2026
+        <a href="index.html">Prasanna Velan V</a>
+        · Cloud &amp; DevOps Enthusiast
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure File Sharing with S3 and CloudFront | Prasanna Velan V</title>
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to Portfolio
+      </a>
+
+      <a href="index.html" class="nav-home">
+        Prasanna Velan V
+      </a>
+
+    </div>
+  </nav>
+
+  <section class="project-hero">
+
+    <div class="container">
+
+      <div class="project-number">
+        Project 09 · AWS Security & CDN
+      </div>
+
+      <h1 class="project-title">
+        Secure File Sharing<br>
+        with S3 and CloudFront
+      </h1>
+
+      <p class="project-subtitle">
+        A secure cloud-based file-sharing solution built using Amazon S3, Amazon CloudFront, IAM, and Lambda@Edge. The project enables protected file storage, secure content delivery through signed URLs, request validation at edge locations, and controlled access management using AWS security best practices.
+      </p>
+
+      <div class="project-tech-list">
+
+        <span class="tech-tag">Amazon S3</span>
+        <span class="tech-tag">Amazon CloudFront</span>
+        <span class="tech-tag">IAM</span>
+        <span class="tech-tag">Lambda@Edge</span>
+        <span class="tech-tag">AWS Security</span>
+        <span class="tech-tag">CDN</span>
+        <span class="tech-tag">Signed URLs</span>
+        <span class="tech-tag">Access Control</span>
+
+      </div>
+
+      <div class="project-actions">
+
+        <a href="https://github.com/PrasannaVelanV/Secure-File-Sharing-with-S3-and-CloudFront.git"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-primary">
+          GitHub Repository
+        </a>
+
+        <button class="btn btn-outline"
+          onclick="document.getElementById('pdfViewer').scrollIntoView({behavior:'smooth'})">
+          View Documentation
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="project-content">
+    <div class="container">
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Overview
+        </p>
+
+        <h2 class="content-title">
+          Project Overview
+        </h2>
+
+        <p class="content-text">
+          The Secure File Sharing System was developed to provide a secure and efficient method for sharing files stored in Amazon S3 while preventing unauthorized public access.
+        </p>
+
+        <p class="content-text">
+          Files uploaded to Amazon S3 are distributed globally through Amazon CloudFront, which uses signed URLs to provide temporary and controlled access to resources. Public access to the S3 bucket is completely restricted, ensuring that files can only be accessed through authorized CloudFront requests.
+        </p>
+
+        <p class="content-text">
+          AWS Lambda@Edge is integrated to validate incoming requests at CloudFront edge locations by checking conditions such as custom request headers before allowing access. IAM policies and roles are configured to ensure secure communication between AWS services and to maintain strict access control.
+        </p>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Scope
+        </p>
+
+        <h2 class="content-title">
+          Project Scope
+        </h2>
+
+        <p class="content-text">
+          The scope of this project is to design and implement a secure file-sharing system that protects files from unauthorized access while enabling efficient global delivery using Amazon CloudFront CDN services.
+        </p>
+
+        <ul class="content-list">
+          <li>Store uploaded files securely inside Amazon S3 buckets</li>
+          <li>Block all direct public access to S3 resources</li>
+          <li>Generate time-limited signed URLs for secure file access</li>
+          <li>Deliver content globally using Amazon CloudFront CDN</li>
+          <li>Implement IAM policies for secure service-level access control</li>
+          <li>Use Lambda@Edge to validate requests before granting access</li>
+          <li>Improve content delivery performance and security simultaneously</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Key Features
+        </p>
+
+        <h2 class="content-title">
+          What Was Implemented
+        </h2>
+
+        <ul class="content-list">
+          <li>Secure file storage using Amazon S3 with blocked public access</li>
+          <li>Amazon CloudFront distribution for low-latency global content delivery</li>
+          <li>Signed URL implementation for temporary and controlled file access</li>
+          <li>Lambda@Edge integration for request validation and additional security</li>
+          <li>IAM roles and policies for secure AWS resource permissions</li>
+          <li>Access control mechanisms to prevent unauthorized file downloads</li>
+          <li>Scalable and secure serverless file-sharing architecture</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Architecture
+        </p>
+
+        <h2 class="content-title">
+          Technical Architecture
+        </h2>
+
+        <div class="info-grid">
+
+          <div class="info-card">
+            <p class="info-card-label">Storage</p>
+            <p class="info-card-value">Amazon S3</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">CDN</p>
+            <p class="info-card-value">Amazon CloudFront</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Security</p>
+            <p class="info-card-value">Signed URLs</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Validation</p>
+            <p class="info-card-value">Lambda@Edge</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Access Control</p>
+            <p class="info-card-value">IAM Policies & Roles</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Architecture</p>
+            <p class="info-card-value">Secure CDN Delivery</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Learnings
+        </p>
+
+        <h2 class="content-title">
+          Key Takeaways
+        </h2>
+
+        <ul class="content-list">
+          <li>Learned secure content delivery techniques using Amazon CloudFront</li>
+          <li>Gained practical experience with signed URL implementation and access control</li>
+          <li>Understood how to secure S3 buckets using IAM and bucket policies</li>
+          <li>Worked with Lambda@Edge for edge-based request validation and security enhancement</li>
+          <li>Learned CDN architecture concepts and low-latency content distribution</li>
+          <li>Improved understanding of AWS security best practices and secure file-sharing workflows</li>
+        </ul>
+
+      </div>
+
+      <div class="pdf-section" id="pdfViewer">
+
+        <p class="content-label">
+          Documentation
+        </p>
+
+        <h2 class="content-title">
+          Project Documentation
+        </h2>
+
+        <div class="pdf-viewer-wrap">
+
+          <div class="pdf-viewer-header">
+
+            <span class="pdf-viewer-title">
+              Secure File Sharing with S3 and CloudFront
+            </span>
+
+            <span style="font-size:0.8rem;color:#888;">
+              Preview Mode
+            </span>
+
+          </div>
+
+          <iframe
+            class="pdf-iframe"
+            src="project9.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            title="Secure File Sharing Documentation">
+          </iframe>
+
+          <div class="pdf-placeholder">
+
+            <div class="pdf-placeholder-icon">
+              📄
+            </div>
+
+            <p class="pdf-placeholder-title">
+              PDF Viewer
+            </p>
+
+            <p class="pdf-placeholder-desc">
+              Documentation preview only. Download and external access are restricted.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <div class="container">
+      <p>
+        &copy; 2026
+        <a href="index.html">Prasanna Velan V</a>
+        · Cloud &amp; DevOps Enthusiast
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

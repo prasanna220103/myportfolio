@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hybrid Cloud Setup Using VPN | Prasanna Velan V</title>
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to Portfolio
+      </a>
+
+      <a href="index.html" class="nav-home">
+        Prasanna Velan V
+      </a>
+
+    </div>
+  </nav>
+
+  <section class="project-hero">
+
+    <div class="container">
+
+      <div class="project-number">
+        Project 15 · AWS Hybrid Cloud Networking
+      </div>
+
+      <h1 class="project-title">
+        Hybrid Cloud Setup<br>
+        Using VPN
+      </h1>
+
+      <p class="project-subtitle">
+        A secure hybrid cloud networking architecture using AWS Site-to-Site VPN, Amazon VPC, Amazon EC2, and VirtualBox. The project demonstrates encrypted communication between a simulated on-premises infrastructure and AWS Cloud resources using VPN tunnels, routing configuration, and hybrid cloud integration.
+      </p>
+
+      <div class="project-tech-list">
+
+        <span class="tech-tag">AWS Site-to-Site VPN</span>
+        <span class="tech-tag">Amazon VPC</span>
+        <span class="tech-tag">Amazon EC2</span>
+        <span class="tech-tag">Route Tables</span>
+        <span class="tech-tag">VirtualBox</span>
+        <span class="tech-tag">Hybrid Networking</span>
+        <span class="tech-tag">VPN Configuration</span>
+        <span class="tech-tag">Secure Connectivity</span>
+
+      </div>
+
+      <div class="project-actions">
+
+        <a href="https://github.com/PrasannaVelanV/Hybrid-Cloud-Setup-Using-VPN-or-Direct-Connect.git"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-primary">
+          GitHub Repository
+        </a>
+
+        <button class="btn btn-outline"
+          onclick="document.getElementById('pdfViewer').scrollIntoView({behavior:'smooth'})">
+          View Documentation
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="project-content">
+    <div class="container">
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Overview
+        </p>
+
+        <h2 class="content-title">
+          Project Overview
+        </h2>
+
+        <p class="content-text">
+          The Hybrid Cloud Setup Using VPN project was developed to demonstrate secure communication between a simulated on-premises environment and AWS Cloud infrastructure using enterprise hybrid networking concepts.
+        </p>
+
+        <p class="content-text">
+          The project uses AWS Site-to-Site VPN to establish encrypted communication between a locally hosted Ubuntu Server virtual machine running inside VirtualBox and AWS resources deployed within an Amazon VPC.
+        </p>
+
+        <p class="content-text">
+          Amazon EC2 instances were launched inside the VPC to act as cloud-side resources, while route tables, subnets, and networking components were configured to enable secure bidirectional communication between local and cloud environments.
+        </p>
+
+        <p class="content-text">
+          The implementation demonstrates practical hybrid cloud architecture concepts including VPN connectivity, secure routing, VPC networking, and integration between on-premises infrastructure and AWS Cloud services.
+        </p>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Scope
+        </p>
+
+        <h2 class="content-title">
+          Project Scope
+        </h2>
+
+        <p class="content-text">
+          The scope of this project is to design and implement a secure hybrid cloud architecture by connecting a simulated on-premises environment with AWS Cloud infrastructure using AWS Site-to-Site VPN.
+        </p>
+
+        <ul class="content-list">
+          <li>Create a simulated on-premises environment using VirtualBox and Ubuntu Server</li>
+          <li>Configure Amazon VPC, subnets, and Internet Gateway for AWS networking</li>
+          <li>Deploy Amazon EC2 instances inside AWS VPC</li>
+          <li>Establish secure Site-to-Site VPN connectivity between local and AWS environments</li>
+          <li>Configure route tables for hybrid cloud communication</li>
+          <li>Enable encrypted communication using VPN tunnels</li>
+          <li>Implement secure hybrid networking architecture</li>
+          <li>Demonstrate connectivity between on-premises and cloud resources</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Key Features
+        </p>
+
+        <h2 class="content-title">
+          What Was Implemented
+        </h2>
+
+        <ul class="content-list">
+          <li>Simulated enterprise on-premises environment using VirtualBox</li>
+          <li>Ubuntu Server virtual machine configuration for local infrastructure</li>
+          <li>Custom Amazon VPC with subnet and route table configuration</li>
+          <li>Amazon EC2 deployment inside AWS Cloud environment</li>
+          <li>AWS Site-to-Site VPN tunnel setup for secure communication</li>
+          <li>Route table configuration for hybrid network traffic routing</li>
+          <li>Secure encrypted communication between local and cloud networks</li>
+          <li>Hybrid cloud integration using AWS networking services</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Architecture
+        </p>
+
+        <h2 class="content-title">
+          Technical Architecture
+        </h2>
+
+        <div class="info-grid">
+
+          <div class="info-card">
+            <p class="info-card-label">VPN Service</p>
+            <p class="info-card-value">AWS Site-to-Site VPN</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Cloud Network</p>
+            <p class="info-card-value">Amazon VPC</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Compute</p>
+            <p class="info-card-value">Amazon EC2</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Routing</p>
+            <p class="info-card-value">Route Tables</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Local Infrastructure</p>
+            <p class="info-card-value">VirtualBox Ubuntu VM</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Connectivity</p>
+            <p class="info-card-value">Encrypted VPN Tunnel</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Learnings
+        </p>
+
+        <h2 class="content-title">
+          Key Takeaways
+        </h2>
+
+        <ul class="content-list">
+          <li>Learned hybrid cloud architecture and networking concepts</li>
+          <li>Gained practical experience with AWS Site-to-Site VPN configuration</li>
+          <li>Understood secure routing and VPN tunnel communication</li>
+          <li>Worked with Amazon VPC networking and route table management</li>
+          <li>Integrated local infrastructure with AWS Cloud services</li>
+          <li>Learned secure hybrid connectivity implementation practices</li>
+          <li>Explored enterprise-style hybrid networking architecture</li>
+          <li>Developed hands-on experience with AWS cloud networking services</li>
+        </ul>
+
+      </div>
+
+      <div class="pdf-section" id="pdfViewer">
+
+        <p class="content-label">
+          Documentation
+        </p>
+
+        <h2 class="content-title">
+          Project Documentation
+        </h2>
+
+        <div class="pdf-viewer-wrap">
+
+          <div class="pdf-viewer-header">
+
+            <span class="pdf-viewer-title">
+              Hybrid Cloud Setup Using VPN Documentation
+            </span>
+
+            <span style="font-size:0.8rem;color:#888;">
+              Preview Mode
+            </span>
+
+          </div>
+
+          <iframe
+            class="pdf-iframe"
+            src="project15.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            title="Hybrid Cloud Setup Documentation">
+          </iframe>
+
+          <div class="pdf-placeholder">
+
+            <div class="pdf-placeholder-icon">
+              📄
+            </div>
+
+            <p class="pdf-placeholder-title">
+              PDF Viewer
+            </p>
+
+            <p class="pdf-placeholder-desc">
+              Documentation preview only. Download and external access are restricted.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <div class="container">
+      <p>
+        &copy; 2026
+        <a href="index.html">Prasanna Velan V</a>
+        · Cloud &amp; DevOps Enthusiast
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

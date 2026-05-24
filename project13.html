@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scalable Web Application with Load Balancing | Prasanna Velan V</title>
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to Portfolio
+      </a>
+
+      <a href="index.html" class="nav-home">
+        Prasanna Velan V
+      </a>
+
+    </div>
+  </nav>
+
+  <section class="project-hero">
+
+    <div class="container">
+
+      <div class="project-number">
+        Project 13 · AWS Scalable Architecture
+      </div>
+
+      <h1 class="project-title">
+        Scalable Web Application<br>
+        with Load Balancing
+      </h1>
+
+      <p class="project-subtitle">
+        A scalable and highly available AWS web application architecture using EC2, Application Load Balancer (ALB), Auto Scaling, RDS, and S3. The project demonstrates automated scaling, traffic distribution, fault tolerance, database integration, and static file hosting using cloud-native AWS services.
+      </p>
+
+      <div class="project-tech-list">
+
+        <span class="tech-tag">Amazon EC2</span>
+        <span class="tech-tag">Application Load Balancer</span>
+        <span class="tech-tag">Auto Scaling</span>
+        <span class="tech-tag">Amazon RDS</span>
+        <span class="tech-tag">Amazon S3</span>
+        <span class="tech-tag">Amazon VPC</span>
+        <span class="tech-tag">Launch Templates</span>
+        <span class="tech-tag">User Data Scripts</span>
+
+      </div>
+
+      <div class="project-actions">
+
+        <a href="https://github.com/PrasannaVelanV/Scalable-Web-Application-with-Load-Balancing.git"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-primary">
+          GitHub Repository
+        </a>
+
+        <button class="btn btn-outline"
+          onclick="document.getElementById('pdfViewer').scrollIntoView({behavior:'smooth'})">
+          View Documentation
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="project-content">
+    <div class="container">
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Overview
+        </p>
+
+        <h2 class="content-title">
+          Project Overview
+        </h2>
+
+        <p class="content-text">
+          The Scalable Web Application with Load Balancing project was developed to demonstrate a highly available and scalable cloud-native web hosting architecture using AWS services.
+        </p>
+
+        <p class="content-text">
+          The application is hosted on multiple EC2 instances configured with Apache and PHP. Incoming user traffic is distributed across instances using an Application Load Balancer (ALB), while Auto Scaling automatically launches or replaces EC2 instances based on traffic demand and health checks.
+        </p>
+
+        <p class="content-text">
+          Amazon RDS MySQL is used as the backend relational database service, and Amazon S3 is integrated for storing static assets such as images and media files. The infrastructure is deployed inside a custom VPC using multiple subnets, launch templates, security groups, and automated user data scripts.
+        </p>
+
+        <p class="content-text">
+          Instead of purchasing a custom domain, the project uses the free ALB DNS endpoint for accessing the web application and avoiding additional Route 53 domain registration costs.
+        </p>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Scope
+        </p>
+
+        <h2 class="content-title">
+          Project Scope
+        </h2>
+
+        <p class="content-text">
+          The scope of this project is to design and implement a scalable and fault-tolerant web application architecture using AWS cloud-native services.
+        </p>
+
+        <ul class="content-list">
+          <li>Deploy scalable PHP web applications on EC2 instances</li>
+          <li>Distribute traffic using Application Load Balancer (ALB)</li>
+          <li>Automatically scale EC2 instances using Auto Scaling Groups</li>
+          <li>Integrate Amazon RDS MySQL for backend database management</li>
+          <li>Store and serve static assets using Amazon S3</li>
+          <li>Automate EC2 configuration using Launch Templates and User Data scripts</li>
+          <li>Implement high availability using multiple Availability Zones</li>
+          <li>Replace unhealthy instances automatically using Auto Scaling health checks</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Key Features
+        </p>
+
+        <h2 class="content-title">
+          What Was Implemented
+        </h2>
+
+        <ul class="content-list">
+          <li>Custom VPC with public subnets across multiple Availability Zones</li>
+          <li>Application Load Balancer for intelligent traffic distribution</li>
+          <li>Auto Scaling Group for automatic EC2 scaling and recovery</li>
+          <li>EC2 Launch Templates with automated Apache and PHP setup</li>
+          <li>Amazon RDS MySQL database integration for centralized storage</li>
+          <li>Amazon S3 integration for static file hosting and storage</li>
+          <li>Security Groups configured for secure communication between services</li>
+          <li>Fault-tolerant and highly available cloud infrastructure design</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Architecture
+        </p>
+
+        <h2 class="content-title">
+          Technical Architecture
+        </h2>
+
+        <div class="info-grid">
+
+          <div class="info-card">
+            <p class="info-card-label">Compute</p>
+            <p class="info-card-value">Amazon EC2</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Load Balancing</p>
+            <p class="info-card-value">Application Load Balancer</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Scaling</p>
+            <p class="info-card-value">Auto Scaling Group</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Database</p>
+            <p class="info-card-value">Amazon RDS MySQL</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Storage</p>
+            <p class="info-card-value">Amazon S3</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Networking</p>
+            <p class="info-card-value">Amazon VPC</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Learnings
+        </p>
+
+        <h2 class="content-title">
+          Key Takeaways
+        </h2>
+
+        <ul class="content-list">
+          <li>Learned scalable cloud architecture design using AWS services</li>
+          <li>Gained practical experience with Application Load Balancer configuration</li>
+          <li>Understood Auto Scaling concepts for dynamic infrastructure management</li>
+          <li>Worked with EC2 Launch Templates and User Data automation scripts</li>
+          <li>Learned secure VPC and Security Group configuration practices</li>
+          <li>Integrated Amazon RDS and Amazon S3 into a scalable web application</li>
+          <li>Explored high availability and fault-tolerant infrastructure deployment</li>
+        </ul>
+
+      </div>
+
+      <div class="pdf-section" id="pdfViewer">
+
+        <p class="content-label">
+          Documentation
+        </p>
+
+        <h2 class="content-title">
+          Project Documentation
+        </h2>
+
+        <div class="pdf-viewer-wrap">
+
+          <div class="pdf-viewer-header">
+
+            <span class="pdf-viewer-title">
+              Scalable Web Application with Load Balancing Documentation
+            </span>
+
+            <span style="font-size:0.8rem;color:#888;">
+              Preview Mode
+            </span>
+
+          </div>
+
+          <iframe
+            class="pdf-iframe"
+            src="project13.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            title="Scalable Web Application Documentation">
+          </iframe>
+
+          <div class="pdf-placeholder">
+
+            <div class="pdf-placeholder-icon">
+              📄
+            </div>
+
+            <p class="pdf-placeholder-title">
+              PDF Viewer
+            </p>
+
+            <p class="pdf-placeholder-desc">
+              Documentation preview only. Download and external access are restricted.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <div class="container">
+      <p>
+        &copy; 2026
+        <a href="index.html">Prasanna Velan V</a>
+        · Cloud &amp; DevOps Enthusiast
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Region Disaster Recovery Plan | Prasanna Velan V</title>
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to Portfolio
+      </a>
+
+      <a href="index.html" class="nav-home">
+        Prasanna Velan V
+      </a>
+
+    </div>
+  </nav>
+
+  <section class="project-hero">
+
+    <div class="container">
+
+      <div class="project-number">
+        Project 16 · AWS Disaster Recovery Architecture
+      </div>
+
+      <h1 class="project-title">
+        Multi-Region Disaster<br>
+        Recovery Plan
+      </h1>
+
+      <p class="project-subtitle">
+        A high-availability disaster recovery architecture using Amazon EC2, Amazon RDS, Route 53, and AWS CloudFormation. The project demonstrates multi-region deployment, automated failover, cross-region infrastructure setup, and business continuity planning using AWS cloud-native services.
+      </p>
+
+      <div class="project-tech-list">
+
+        <span class="tech-tag">Amazon EC2</span>
+        <span class="tech-tag">Amazon RDS</span>
+        <span class="tech-tag">Amazon Route 53</span>
+        <span class="tech-tag">AWS CloudFormation</span>
+        <span class="tech-tag">Disaster Recovery</span>
+        <span class="tech-tag">Failover Routing</span>
+        <span class="tech-tag">High Availability</span>
+        <span class="tech-tag">Cross-Region Architecture</span>
+
+      </div>
+
+      <div class="project-actions">
+
+        <a href="https://github.com/PrasannaVelanV/Multi-Region-Disaster-Recovery-Plan.git"
+           target="_blank"
+           rel="noopener"
+           class="btn btn-primary">
+          GitHub Repository
+        </a>
+
+        <button class="btn btn-outline"
+          onclick="document.getElementById('pdfViewer').scrollIntoView({behavior:'smooth'})">
+          View Documentation
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="project-content">
+    <div class="container">
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Overview
+        </p>
+
+        <h2 class="content-title">
+          Project Overview
+        </h2>
+
+        <p class="content-text">
+          The Multi-Region Disaster Recovery Plan project was developed to demonstrate high availability and business continuity architecture using AWS cloud services deployed across multiple geographic regions.
+        </p>
+
+        <p class="content-text">
+          The project deploys application servers and database infrastructure across two AWS regions, with Mumbai configured as the primary region and Singapore configured as the disaster recovery region.
+        </p>
+
+        <p class="content-text">
+          Amazon Route 53 health checks continuously monitor the health of the primary application environment and automatically redirect user traffic to the disaster recovery environment during failures or outages.
+        </p>
+
+        <p class="content-text">
+          AWS CloudFormation is used to automate infrastructure provisioning and management, enabling consistent deployment of resources across regions while reducing manual configuration effort.
+        </p>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Scope
+        </p>
+
+        <h2 class="content-title">
+          Project Scope
+        </h2>
+
+        <p class="content-text">
+          The scope of this project is to design and implement a disaster recovery architecture that ensures application availability even during regional outages or infrastructure failures.
+        </p>
+
+        <ul class="content-list">
+          <li>Deploy application infrastructure across Mumbai and Singapore regions</li>
+          <li>Configure disaster recovery architecture using secondary cloud resources</li>
+          <li>Implement automated failover using Route 53 health checks</li>
+          <li>Redirect user traffic during primary region failures</li>
+          <li>Automate infrastructure deployment using AWS CloudFormation</li>
+          <li>Configure cross-region application and database setup</li>
+          <li>Ensure high availability and business continuity planning</li>
+          <li>Minimize application downtime during failures</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Key Features
+        </p>
+
+        <h2 class="content-title">
+          What Was Implemented
+        </h2>
+
+        <ul class="content-list">
+          <li>Multi-region EC2 deployment across Mumbai and Singapore regions</li>
+          <li>Amazon RDS database setup for disaster recovery architecture</li>
+          <li>Route 53 failover routing policy configuration</li>
+          <li>Health check monitoring for automated traffic redirection</li>
+          <li>Disaster recovery region activation during outages</li>
+          <li>AWS CloudFormation templates for automated infrastructure deployment</li>
+          <li>Cross-region high availability cloud architecture</li>
+          <li>Business continuity and fault-tolerant infrastructure planning</li>
+        </ul>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Architecture
+        </p>
+
+        <h2 class="content-title">
+          Technical Architecture
+        </h2>
+
+        <div class="info-grid">
+
+          <div class="info-card">
+            <p class="info-card-label">Compute</p>
+            <p class="info-card-value">Amazon EC2</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Database</p>
+            <p class="info-card-value">Amazon RDS</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">DNS & Failover</p>
+            <p class="info-card-value">Amazon Route 53</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Automation</p>
+            <p class="info-card-value">AWS CloudFormation</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">Primary Region</p>
+            <p class="info-card-value">Mumbai</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-card-label">DR Region</p>
+            <p class="info-card-value">Singapore</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-section">
+
+        <p class="content-label">
+          Learnings
+        </p>
+
+        <h2 class="content-title">
+          Key Takeaways
+        </h2>
+
+        <ul class="content-list">
+          <li>Learned multi-region cloud deployment strategies using AWS</li>
+          <li>Gained practical experience with disaster recovery architecture planning</li>
+          <li>Understood Route 53 health checks and failover routing mechanisms</li>
+          <li>Worked with AWS CloudFormation for infrastructure automation</li>
+          <li>Explored business continuity and high availability concepts</li>
+          <li>Learned cross-region deployment and traffic redirection techniques</li>
+          <li>Implemented automated failover systems for cloud applications</li>
+          <li>Developed hands-on experience with enterprise disaster recovery solutions</li>
+        </ul>
+
+      </div>
+
+      <div class="pdf-section" id="pdfViewer">
+
+        <p class="content-label">
+          Documentation
+        </p>
+
+        <h2 class="content-title">
+          Project Documentation
+        </h2>
+
+        <div class="pdf-viewer-wrap">
+
+          <div class="pdf-viewer-header">
+
+            <span class="pdf-viewer-title">
+              Multi-Region Disaster Recovery Documentation
+            </span>
+
+            <span style="font-size:0.8rem;color:#888;">
+              Preview Mode
+            </span>
+
+          </div>
+
+          <iframe
+            class="pdf-iframe"
+            src="project16.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            title="Multi-Region Disaster Recovery Documentation">
+          </iframe>
+
+          <div class="pdf-placeholder">
+
+            <div class="pdf-placeholder-icon">
+              📄
+            </div>
+
+            <p class="pdf-placeholder-title">
+              PDF Viewer
+            </p>
+
+            <p class="pdf-placeholder-desc">
+              Documentation preview only. Download and external access are restricted.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <div class="container">
+      <p>
+        &copy; 2026
+        <a href="index.html">Prasanna Velan V</a>
+        · Cloud &amp; DevOps Enthusiast
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
