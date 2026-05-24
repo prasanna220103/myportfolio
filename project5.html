@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom VPC Setup | Prasanna Velan V</title>
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to Portfolio
+      </a>
+      <a href="index.html" class="nav-home">Prasanna Velan V</a>
+    </div>
+  </nav>
+
+  <section class="project-hero">
+    <div class="container">
+      <div class="project-number">Project · AWS Networking</div>
+
+      <h1 class="project-title">
+        Custom VPC Setup <br>
+        &amp; Bastion Host with NAT Gateway
+      </h1>
+
+      <p class="project-subtitle">
+        Designed and implemented a secure AWS architecture using a custom VPC with public and private subnets. Configured a bastion host for SSH access and a NAT Gateway for controlled outbound connectivity.
+      </p>
+
+      <div class="project-tech-list">
+        <span class="tech-tag">AWS VPC</span>
+        <span class="tech-tag">EC2</span>
+        <span class="tech-tag">NAT Gateway</span>
+        <span class="tech-tag">Internet Gateway</span>
+        <span class="tech-tag">Security Groups</span>
+        <span class="tech-tag">Routing Tables</span>
+        <span class="tech-tag">SSH</span>
+      </div>
+
+      <div class="project-actions">
+        <a href="https://github.com/PrasannaVelanV/Custom-VPC-with-Bastion-Host"
+           target="_blank"
+           class="btn btn-primary">
+          GitHub Repository
+        </a>
+
+        <button class="btn btn-outline"
+          onclick="document.getElementById('pdfViewer').scrollIntoView({behavior:'smooth'})">
+          View Documentation
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-content">
+    <div class="container">
+
+      <!-- Overview -->
+      <div class="content-section">
+        <p class="content-label">Overview</p>
+        <h2 class="content-title">Project Overview</h2>
+
+        <p class="content-text">
+          This project demonstrates a real-world AWS networking setup using a custom VPC with isolated public and private subnets.
+        </p>
+
+        <p class="content-text">
+          A bastion host enables secure SSH access to private instances, while a NAT Gateway allows outbound internet access without exposing internal resources.
+        </p>
+      </div>
+
+      <!-- Features -->
+      <div class="content-section">
+        <p class="content-label">Key Features</p>
+        <h2 class="content-title">What Was Implemented</h2>
+
+        <ul class="content-list">
+          <li>Custom VPC with CIDR configuration</li>
+          <li>Public & private subnet architecture</li>
+          <li>Bastion host for secure SSH access</li>
+          <li>Private EC2 without public IP</li>
+          <li>Internet Gateway for public connectivity</li>
+          <li>NAT Gateway for secure outbound access</li>
+          <li>Route tables for traffic control</li>
+          <li>Security groups for access restriction</li>
+        </ul>
+      </div>
+
+      <!-- Technical -->
+      <div class="content-section">
+        <p class="content-label">Technical Details</p>
+        <h2 class="content-title">Implementation Details</h2>
+
+        <div class="info-grid">
+          <div class="info-card"><p class="info-card-label">Cloud Platform</p><p class="info-card-value">AWS</p></div>
+          <div class="info-card"><p class="info-card-label">Services</p><p class="info-card-value">VPC, EC2, NAT Gateway</p></div>
+          <div class="info-card"><p class="info-card-label">Architecture</p><p class="info-card-value">Public + Private Subnets</p></div>
+          <div class="info-card"><p class="info-card-label">Security</p><p class="info-card-value">Security Groups + SSH</p></div>
+          <div class="info-card"><p class="info-card-label">Type</p><p class="info-card-value">Cloud Project</p></div>
+          <div class="info-card"><p class="info-card-label">Focus</p><p class="info-card-value">Secure Networking</p></div>
+        </div>
+      </div>
+
+      <!-- Learnings -->
+      <div class="content-section">
+        <p class="content-label">Learnings</p>
+        <h2 class="content-title">Key Takeaways</h2>
+
+        <ul class="content-list">
+          <li>AWS VPC architecture and subnet design</li>
+          <li>Secure SSH using bastion host</li>
+          <li>NAT Gateway usage for private instances</li>
+          <li>Routing and traffic flow control</li>
+          <li>Real-world cloud security practices</li>
+        </ul>
+      </div>
+
+      <!-- 🔒 LOCKED PDF PREVIEW -->
+      <div class="pdf-section" id="pdfViewer">
+        <p class="content-label">Documentation</p>
+        <h2 class="content-title">Project Documentation</h2>
+
+        <div class="pdf-viewer-wrap">
+
+          <div class="pdf-viewer-header">
+            <span class="pdf-viewer-title">Custom VPC Setup with Bastion Host and NAT Gateway 
+</span>
+            <span style="font-size:0.8rem;color:#888;">Preview Only</span>
+          </div>
+
+          <iframe 
+            class="pdf-iframe"
+            src="project-vpc.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            title="Custom VPC Documentation">
+          </iframe>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <div class="container">
+      <p>&copy; 2026 <a href="index.html">Prasanna Velan V</a> · Cloud & DevOps Engineer</p>
+    </div>
+  </footer>
+
+</body>
+</html>

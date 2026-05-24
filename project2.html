@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux Server Deployment | Prasanna Velan V</title>
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to Portfolio
+      </a>
+      <a href="index.html" class="nav-home">Prasanna Velan V</a>
+    </div>
+  </nav>
+
+  <section class="project-hero">
+    <div class="container">
+      <div class="project-number">Project 02 · Linux Administration</div>
+      <h1 class="project-title">Linux Server Deployment<br>&amp; Administration</h1>
+      <p class="project-subtitle">
+        A comprehensive Linux server administration project covering system setup, user management, storage configuration with LVM and RAID, web service deployment, and production-grade monitoring.
+      </p>
+
+      <div class="project-tech-list">
+        <span class="tech-tag">Linux (RHEL/CentOS)</span>
+        <span class="tech-tag">LVM</span>
+        <span class="tech-tag">RAID</span>
+        <span class="tech-tag">ACL</span>
+        <span class="tech-tag">Apache</span>
+        <span class="tech-tag">Bash</span>
+        <span class="tech-tag">Cron</span>
+        <span class="tech-tag">Rsync</span>
+      </div>
+
+      <div class="project-actions">
+        <a href="https://github.com/PrasannaVelanV/Linux-Server-Deployment" target="_blank" rel="noopener" class="btn btn-primary">
+          GitHub Repository
+        </a>
+
+        <button class="btn btn-outline" onclick="document.getElementById('pdfViewer').scrollIntoView({behavior:'smooth'})">
+          View Documentation
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-content">
+    <div class="container">
+
+      <div class="content-section">
+        <p class="content-label">Overview</p>
+        <h2 class="content-title">Project Overview</h2>
+        <p class="content-text">
+          This project simulates a real-world Linux server setup and administration workflow, covering installation, configuration, storage management, service deployment, and monitoring.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <p class="content-label">Key Features</p>
+        <h2 class="content-title">What Was Implemented</h2>
+        <ul class="content-list">
+          <li>Linux server setup and security hardening</li>
+          <li>User & group management with permissions and ACL</li>
+          <li>LVM configuration and logical volume management</li>
+          <li>RAID setup (0, 1, 5) for redundancy</li>
+          <li>Automated backup using rsync and cron</li>
+          <li>Apache web server setup and configuration</li>
+          <li>System monitoring and log analysis</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <p class="content-label">Technical Details</p>
+        <h2 class="content-title">Implementation Details</h2>
+        <div class="info-grid">
+          <div class="info-card"><p class="info-card-label">OS</p><p class="info-card-value">RHEL / CentOS 8</p></div>
+          <div class="info-card"><p class="info-card-label">Storage</p><p class="info-card-value">LVM + RAID</p></div>
+          <div class="info-card"><p class="info-card-label">Web Server</p><p class="info-card-value">Apache</p></div>
+          <div class="info-card"><p class="info-card-label">Backup</p><p class="info-card-value">Rsync + Cron</p></div>
+          <div class="info-card"><p class="info-card-label">Duration</p><p class="info-card-value">Jan–Feb 2026</p></div>
+          <div class="info-card"><p class="info-card-label">Location</p><p class="info-card-value">Besant Technologies</p></div>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <p class="content-label">Learnings</p>
+        <h2 class="content-title">Key Takeaways</h2>
+        <ul class="content-list">
+          <li>Strong Linux CLI and shell scripting skills</li>
+          <li>Understanding of LVM and RAID storage systems</li>
+          <li>Backup and recovery strategies</li>
+          <li>Web server configuration and hosting</li>
+          <li>Monitoring and troubleshooting skills</li>
+        </ul>
+      </div>
+
+      <!-- ✅ FIXED PDF SECTION -->
+      <div class="pdf-section" id="pdfViewer">
+        <p class="content-label">Documentation</p>
+        <h2 class="content-title">Project Documentation</h2>
+
+        <div class="pdf-viewer-wrap">
+          <div class="pdf-viewer-header">
+            <span class="pdf-viewer-title">Linux Project - Webserver Deploy By using Tomcat </span>
+            <span style="font-size:0.8rem;color:#888;">Preview Mode</span>
+          </div>
+
+          <iframe 
+            class="pdf-iframe" 
+            src="project2.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            title="Linux Server Deployment Documentation">
+          </iframe>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="project-footer">
+    <div class="container">
+      <p>&copy; 2026 <a href="index.html">Prasanna Velan V</a> · Cloud &amp; DevOps Enthusiast</p>
+    </div>
+  </footer>
+
+</body>
+</html>
